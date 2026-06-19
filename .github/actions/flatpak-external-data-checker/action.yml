@@ -1,0 +1,7 @@
+name: 'Flatpak External Data Checker'
+description: 'Check if external data changed across Flathub org'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  env:
+    GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
